@@ -1,0 +1,118 @@
+.reviews-section {
+  background: #f5e7dc;
+  padding: 90px 20px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+.reviews-badge {
+  display: inline-block;
+  background: #9333ea;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.reviews-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.reviews-subtitle {
+  color: #475569;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+.reviews-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* CARD */
+.review-card {
+  background: white;
+  border-radius: 16px;
+  padding: 26px 28px 34px;
+  text-align: left;
+  border: 2px solid #ffd6b0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* HEADER */
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  background: #fde68a;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.review-header h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  color: #0f172a;
+}
+
+.review-header p {
+  font-size: 13px;
+  margin: 2px 0 0;
+  color: #475569;
+}
+
+/* STARS */
+.stars {
+  color: #facc15;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+/* TEXT */
+.review-text {
+  font-size: 12.4px;
+  color: #334155;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-title {
+    font-size: 32px;
+  }
+}
