@@ -1,0 +1,18 @@
+.page {
+  min-height: calc(100vh - 70px);
+  background: #fff7ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.page h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.page p {
+  color: #666;
+}

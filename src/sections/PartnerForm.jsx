@@ -2,7 +2,7 @@ import "./PartnerForm.css";
 
 export default function PartnerForm() {
   return (
-    <section className="partner-form-section">
+    <section id= "partnerform" className="partner-form-section">
       <span className="form-badge">For Academies</span>
 
       <h1 className="form-title">

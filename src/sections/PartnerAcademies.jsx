@@ -53,7 +53,12 @@ export default function PartnerAcademies() {
           </div>
         </div>
 
-        <button className="partner-btn">
+        <button className="partner-btn"
+        onClick={() => {
+              document.getElementById("partnerform").scrollIntoView({
+                behavior: "smooth"
+              });
+            }}>
           Become a Partner →
         </button>
       </div>

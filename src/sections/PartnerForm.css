@@ -5,6 +5,7 @@
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
+    width: 100%;
 }
 
 .form-badge {
@@ -50,11 +51,16 @@
 
 .form-group {
   text-align: left;
+ 
 }
+
+
 
 .form-group.full {
   margin-top: 20px;
+ 
 }
+
 
 label {
   font-size: 13px;
@@ -148,6 +154,18 @@ textarea {
   gap: 20px;
   color: #2563eb;
   font-weight: 600;
+}
+
+/* Base transition (safe, no design change) */
+input,
+textarea {
+  transition: box-shadow 0.25s ease;
+}
+
+/* BOX SHADOW ONLY WHEN CLICKED + PLACEHOLDER IS VISIBLE */
+input:focus:placeholder-shown,
+textarea:focus:placeholder-shown {
+  box-shadow: 0 2.5px 8px rgb(108, 103, 103);
 }
 
 /* RESPONSIVE */

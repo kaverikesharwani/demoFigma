@@ -2,7 +2,7 @@ import "./Features.css";
 
 export default function Features() {
   return (
-    <section className="features-section">
+    <section id="features" className="features-section">
       <span className="Fbadge">Features</span>
 
       <h1 className="title">Everything you need to succeed</h1>

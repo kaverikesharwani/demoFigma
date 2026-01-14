@@ -1,0 +1,173 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fffaf2;
+  font-family: "Inter", sans-serif;
+}
+
+.dashboard {
+  max-width: 920px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #ffd6b0;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+/* Profile */
+.profile-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-left {
+  display: flex;
+  gap: 16px;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #fde2e2;
+  color: #e53935;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-left h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.email {
+  font-size: 14px;
+  color: #777;
+}
+
+.member {
+  font-size: 13px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 6px;
+  background: #ffe8cc;
+  color: #e67700;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.edit-btn {
+  border: 1px solid #ff6b6b;
+  background: #fff;
+  color: #ff6b6b;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.stat-box {
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid;
+}
+
+.stat-box svg {
+  font-size: 20px;
+}
+
+.stat-box .label {
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+.stat-box .value {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.stat-box .sub {
+  font-weight: 600;
+}
+
+.red {
+  background: #fff3f3;
+  border-color: #ffb3b3;
+  color: #e03131;
+}
+
+.orange {
+  background: #fff7e6;
+  border-color: #ffd8a8;
+  color: #f76707;
+}
+
+.yellow {
+  background: #fffbe6;
+  border-color: #ffec99;
+  color: #f59f00;
+}
+
+/* Achievements */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.achievement {
+  background: #fffbe6;
+  border: 1px solid #ffec99;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+}
+
+.achievement .icon {
+  font-size: 24px;
+}
+
+.achievement p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.achievement.muted {
+  background: #f8f9fa;
+  border-color: #e9ecef;
+  color: #adb5bd;
+}
