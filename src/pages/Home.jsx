@@ -16,7 +16,7 @@ export default function Home() {
         <div className="hero">
           <div className="logo">🔥 <span>OPOMAP</span></div>
             <br/>
-          <div className="badge">
+          <div className="homebadge">
             ⚡ Leading platform for firefighter exams
           </div>
 

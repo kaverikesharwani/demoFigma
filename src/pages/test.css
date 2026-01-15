@@ -1,0 +1,145 @@
+/* 1. Global Reset */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(180deg, #fff5eb 0%, #fffaf2 100%);
+  color: #111;
+}
+
+/* PAGE */
+.official-page {
+  max-width: 520px;
+  margin: 40px auto 80px;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+/* HEADER */
+.header {
+  margin-bottom: 28px;
+}
+
+.header-icon {
+  font-size: 34px;
+  margin-bottom: 6px;
+}
+
+.header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.header p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.module-card {
+  background: #ffffff;
+  border: 1px solid #ffd8a8;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: left;
+}
+
+.module-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.module-icon {
+  background: #fff1f2;
+  color: #e11d48;
+  border-radius: 8px;
+  padding: 6px;
+  font-size: 14px;
+}
+
+.module-header h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* BUTTONS */
+.module-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 8px 10px;
+  font-size: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.btn.outline {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  color: #111;
+}
+
+.btn.primary {
+  background: #e11d48;
+  border: none;
+  color: #fff;
+}
+
+/* MODE INFO */
+.mode-info {
+  border-radius: 12px;
+  padding: 14px;
+  text-align: left;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.mode-info strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.mode-info.practice {
+  background: #fff4e5;
+  border: 1px solid #ffd8a8;
+}
+
+.mode-info.exam {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+}
+
+.mode-info p {
+  margin: 0;
+  color: #6b7280;
+}

@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import "./TestHome.css";
 
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <section className="home-wrapper">
       {/* Header */}
@@ -20,7 +22,11 @@ export default function Home() {
           <p className="card-desc">
             Domina localitzacions, rutes i coneixement geogràfic
           </p>
-          <button className="start-btn">Començar Test</button>
+          <button className="start-btn"
+            onClick={() => navigate("/src/pages/test")}
+            >
+            Començar Test
+          </button>
         </div>
 
         <div className="home-card">
@@ -29,7 +35,11 @@ export default function Home() {
           <p className="card-desc">
             Preguntes oficials de les oposicions a bombers
           </p>
-          <button className="start-btn">Començar Test</button>
+          <button className="start-btn"
+            onClick={() => navigate("/src/pages/test")}
+            >
+            Començar Test
+          </button>
         </div>
       </div>
 

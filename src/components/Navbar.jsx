@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="navbar">
       {/* Left */}
       <div className="nav-left">
-        <span className="logo">🚒 OPOMAP</span>
+        <h2>🚒 OPOMAP</h2>
       </div>
 
       {/* Center links */}

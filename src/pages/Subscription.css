@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #fff5eb 0%, #fffaf2 100%);
+  font-family: "Inter", sans-serif;
+  color: #111;
+}
+html,
+body,
+#root {
+  background: linear-gradient(180deg, #fff5eb 0%, #fffaf2 100%);
+  min-height: 100%;
+}
+
+
+/* PAGE */
+.plans-page {
+  max-width: 1120px;
+  margin: 48px auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 28px;
+}
+
+/* PROMO */
+.promo {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  background: #fff4e5;
+  border: 1px solid #ffd8a8;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 36px;
+}
+
+.promo-left {
+  display: flex;
+  gap: 14px;
+  text-align: left;
+}
+
+.promo-icon {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.promo-badge {
+  background: #ff6b00;
+  color: #fff;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  margin-left: 6px;
+}
+
+.promo-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.promo-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  cursor: pointer;
+}
+
+.promo-btn.primary {
+  background: #ff6b00;
+  color: #fff;
+  border-color: #ff6b00;
+}
+
+/* PLANS */
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 40px;
+}
+
+.plan-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 22px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+  position: relative;
+  text-align: left;
+}
+
+.plan-icon {
+  background: #fff1f2;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan-card h3 {
+  margin-top: 14px;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: 700;
+  color: #e11d48;
+}
+
+.price span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.desc {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 18px;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-card li {
+  margin-bottom: 9px;
+  color: #16a34a;
+}
+
+/* BUTTONS */
+.plan-btn {
+  width: 100%;
+  margin-top: 22px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #e5e7eb;
+  font-weight: 600;
+}
+
+.popular .plan-btn {
+  background: #e11d48;
+  color: #fff;
+}
+
+.muted .plan-btn {
+  background: #9ca3af;
+  color: #fff;
+}
+
+/* BADGES */
+.badge {
+  position: absolute;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.popular {
+  border: 2px solid #e11d48;
+  transform: translateY(-6px);
+}
+
+.popular-badge {
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #e11d48;
+}
+
+.corner-badge {
+  top: 14px;
+  right: 14px;
+  background: #16a34a;
+}
+
+/* INFO */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 36px;
+}
+
+.info-box {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  gap: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+/* FAQ */
+.faq {
+  background: #fff;
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
