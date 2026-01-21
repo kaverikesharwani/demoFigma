@@ -1,9 +1,19 @@
+import { NavLink, useNavigate } from "react-router-dom";
 import "./test.css";
 
 export default function Test() {
+  const navigate = useNavigate();
+
+  const goTotest = (module, mode) => {
+    navigate(`/app/mcq?module=${module}&mode=${mode}`);
+  };
+
   return (
     <div className="official-page">
-      <p className="breadcrumb">— Home</p>
+      <button className="breadcrumb" onClick={() => navigate("/app/TestHome")}>
+         - Home
+         
+      </button>
 
       <div className="header">
         <div className="header-icon">📚</div>
@@ -36,6 +46,7 @@ export default function Test() {
 }
 
 function ModuleCard({ title, icon }) {
+    const navigate = useNavigate();
   return (
     <div className="module-card">
       <div className="module-header">
@@ -44,7 +55,7 @@ function ModuleCard({ title, icon }) {
       </div>
 
       <div className="module-actions">
-        <button className="btn outline">
+        <button className="btn outline" onClick={() => navigate("/app/mcq?module=rivers&mode=practice")}>
           📖 Practice Mode
         </button>
         <button className="btn primary">

@@ -1,12 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar() 
+{
+  const navigate = useNavigate();
   return (
     <nav className="navbar">
       {/* Left */}
-      <div className="nav-left">
-        <h2>🚒 OPOMAP</h2>
+      <div className="nav-left" onClick={() => navigate("/")}>
+        <h2>
+          🚒 OPOMAP
+        </h2>
       </div>
 
       {/* Center links */}
@@ -26,7 +31,8 @@ export default function Navbar() {
 
       {/* Right */}
       <div className="nav-right">
-        <span className="user">🌐 Google User</span>
+        <span className="user">🌐 Google User </span>
+          <p className="userg">user@gmail.com <button className="arrow">⬅️</button></p>
       </div>
     </nav>
   );

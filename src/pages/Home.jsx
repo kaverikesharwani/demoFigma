@@ -60,6 +60,7 @@ export default function Home() {
       <PartnerAcademies />
       <PartnerForm />
       <CTA />
+  
       <Footer />
     </div>
   );

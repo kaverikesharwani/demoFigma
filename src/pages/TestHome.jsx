@@ -10,7 +10,7 @@ export default function Home() {
         <div className="home-icon">🚒</div>
         <h1 className="home-title">OPOMAP</h1>
         <p className="home-subtitle">
-          Tria una categoria per començar l&apos;entrenament
+          Choose a category to start the training
         </p>
       </div>
 
@@ -18,27 +18,27 @@ export default function Home() {
       <div className="card-container">
         <div className="home-card">
           <div className="card-icon red">🗺️</div>
-          <h3 className="card-title">Geografia i Navegació</h3>
+          <h3 className="card-title">Geography and Navigation</h3>
           <p className="card-desc">
-            Domina localitzacions, rutes i coneixement geogràfic
+            Master locations, routes, and geographic knowledge
           </p>
           <button className="start-btn"
-            onClick={() => navigate("/src/pages/test")}
+            onClick={() => navigate("/test")}
             >
-            Començar Test
+            Start Test
           </button>
         </div>
 
         <div className="home-card">
           <div className="card-icon orange">🧪</div>
-          <h3 className="card-title">Preguntes Oficials</h3>
+          <h3 className="card-title">Official Questions</h3>
           <p className="card-desc">
-            Preguntes oficials de les oposicions a bombers
+            Official questions from the firefighter competitive exams
           </p>
           <button className="start-btn"
-            onClick={() => navigate("/src/pages/test")}
+            onClick={() => navigate("/test")}
             >
-            Començar Test
+            Start Test
           </button>
         </div>
       </div>
@@ -46,9 +46,9 @@ export default function Home() {
       {/* Banner */}
       <div className="banner">
         <div className="banner-icon">🧑‍🚒</div>
-        <h3 className="banner-title">Mantén-te Preparat!</h3>
+        <h3 className="banner-title">Stay Prepared!</h3>
         <p className="banner-text">
-          Completa els mòduls d&apos;entrenament per millorar les teves habilitats
+          Complete the training modules to improve your skills
         </p>
       </div>
     </section>
