@@ -103,16 +103,21 @@ html, body, #root {
     border: none;
 }
 
-.primary {
+.btnp {
     background: #ff2d00;
     color: white;
     box-shadow: 0 12px 25px rgba(255, 0, 0, 0.35);
+    height: 65px;
+    width: 245.5px;
 }
 
-.secondary {
+
+.btns {
     background: white;
     color: #111;
     border: 1px solid #e5e7eb;
+    height: 65px;
+    width: 245.5px;
 }
 
 /* STATS */

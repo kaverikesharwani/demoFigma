@@ -31,8 +31,17 @@ export default function Navbar()
 
       {/* Right */}
       <div className="nav-right">
-        <span className="user">🌐 Google User </span>
-          <p className="userg">user@gmail.com <button className="arrow">⬅️</button></p>
+        <div className="user-info">
+            <span className="user-name">User Google</span>
+            <span className="user-email">user@gmail.com</span>
+        </div>
+        
+        <button 
+          className="logout-btn"  
+          onClick={() => navigate("/login")}
+        >
+          ⬅️
+        </button>
       </div>
     </nav>
   );

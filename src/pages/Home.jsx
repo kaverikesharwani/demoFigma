@@ -31,13 +31,13 @@ export default function Home() {
 
           <div className="buttons">
             <button
-              className="btn primary"
+              className="btnp"
               onClick={() => navigate("/login")}
             >
               ⚡ Access Platform ➡️
             </button>
 
-            <button className="btn secondary" onClick={() => {
+            <button className="btns" onClick={() => {
               document.getElementById("features").scrollIntoView({
                 behavior: "smooth"
               });
